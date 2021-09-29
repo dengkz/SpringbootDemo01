@@ -1,0 +1,22 @@
+<!DOCTYPE htm1>
+<html 1ang="en" xm1ns:th="http: //www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/main.css" type="text/css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+
+<img src="/images/cn.png">
+<h1>登录</h1>
+
+<p th:text="${msg}" style="color:red;"></p>
+<form th:action="@{/login}">
+    <p>用户名:<input type="text" name="username"></p>
+    <p>密码:<input type="text" name="password"></p>
+    <p><input type="submit"></p>
+</form>
+
+<div  class="btn">test</div>
+</body>
+</html>
